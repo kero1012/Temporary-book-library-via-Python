@@ -28,8 +28,8 @@ def check_out():
       print(f"{books[theb]['name']} Checked out successfully...")
     elif books[theb]['available']==False:
       print(f"Sorry {books[theb]['name']} Is NOT available")
-    else:
-      print(f"Sorry I can't Find {theb} ")
+  else:
+    print(f"Sorry I can't Find {theb} ")
 
 def check_in():
   clear_screen()
@@ -60,7 +60,7 @@ while True:
   if choice==1:
     while True:
       add_book()
-      keep_going=input("Do you Want To Add Anthor Book?(y/n)").lower()
+      keep_going=input("Do you Want To Add Aanother Book?(y/n)").lower()
       if keep_going=='n':
         break
   #list books
@@ -70,14 +70,14 @@ while True:
   elif choice ==2:
     while True:
       check_out()
-      keep_going=input("Do you Want To check out Anthor Book?(y/n)").lower()
+      keep_going=input("Do you Want To check out Another Book?(y/n)").lower()
       if keep_going=='n':
         break
   #Check In Book
   elif choice==3:
     while True:
       check_in()
-      keep_going=input("Do you Want To check out Anthor Book?(y/n)").lower()
+      keep_going=input("Do you Want To check In Another Book?(y/n)").lower()
       if keep_going=='n':
         break
   elif choice==5:
